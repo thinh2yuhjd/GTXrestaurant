@@ -1,0 +1,484 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+/*body
+{
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/bbq-grill-cooked-with-hot-spicy-sichuan-pepper-sauce-is-chinese-herb.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}*/
+.header
+{
+	width: 100%;
+	height: 110px;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+.logo
+{
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 40px;
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+}
+.logo img
+{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+.logo > .Ten p
+{
+	font-weight:700;
+}
+.logo > .Ten p h1
+{
+	font-weight: 900;
+}
+.menu
+{
+	cursor: pointer;
+}
+.menu ul
+{
+	list-style: none;
+}
+.menu ul li
+{
+	margin-top: 35px;
+	margin-right: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	transition: all .5s;
+	position: relative;
+	display: inline-block;
+}
+.menu ul li::after
+{
+	content: "";
+	width: 100%;
+	height: 2px;
+	top: -5px;
+	position: absolute;
+	background-color: tomato;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: all .5s;
+}
+.menu ul li:hover::after
+{
+	transform: scaleX(1);
+}
+.menu ul li:hover
+{
+	font-size: 25px;
+}
+.menu img
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.food2Menu
+{
+	margin-bottom: 30px;
+	position: absolute;
+	width: 260px;
+	z-index: 999;
+	background: white;
+	border-radius: 0 0 30px 30px;
+	padding: 30px;
+	opacity: 0;
+	transition: all .5s;
+}
+.foodMenu:hover > .food2Menu
+{
+	opacity: 1;
+}
+.food2Menu i
+{
+	color: red;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.food3Menu
+{	
+	top: -50px;
+	position: absolute;
+	left: 300px;
+	width: 0;
+	background: white;
+	border-radius: 30px;
+	padding: 30px;
+	transition: all 1s;
+	opacity: 0;
+}
+.food3Menu1
+{	
+	top: -60px;
+	position: absolute;
+	left: 300px;
+	width: 0;
+	background: white;
+	border-radius: 30px;
+	padding: 30px;
+	transition: all 1s;
+	opacity: 0;
+}
+.food2Menu2:hover > .food3Menu1
+{
+	width: 250px;
+	opacity: 1;
+}
+.food2Menu1:hover> .food3Menu
+{
+	width: 250px;
+	opacity: 1;
+}
+.banner {
+  position: relative;
+  width: 1860px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.banner img
+{
+	filter: brightness(0.75);
+  width: 1860px;
+  transition: all 1s;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.slide
+{
+  width: 1860px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+.btn
+{
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+.btn button
+{
+	cursor: pointer;
+	background-color: white;
+	outline: none;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 30px;
+	transition: all .5s;	
+}
+.btn button:hover
+{
+	background-color: rgba(167,157,157,0.5);
+}
+.btn i
+{
+	transition: all .5s;
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+}
+.btn button:hover i
+{
+	color: white;
+}
+.dots
+{
+	color: white;
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.dots li
+{
+	cursor: pointer;
+	margin-right: 30px;
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 3px solid white;
+	transition: all .5s;
+}
+.dots li:hover
+{
+	transform: scale(1.4);
+}
+.active
+{
+	background: white;
+	transform: scale(1.4);
+}
+/*.banner img.active {
+  opacity: 1;
+}*/
+@keyframes slideEffect
+{
+	0%,20%
+	{
+		transform: translate(0);
+	}
+	25%,45%
+	{
+		transform: translate(-100%);
+	}
+	50%,70%
+	{
+		transform: translate(-200%);
+	}
+	75%,95%
+	{
+		transform: translate(-300%);
+	}
+	100%
+	{
+		transform: translate(-400%);
+	}
+}
+.textBOX img
+{
+	width: 250px;
+	height: 242px;
+	border-radius: 50%;
+	float: left;
+	shape-outside: margin-box;
+	margin: 5px 10px 5px 10px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out forwards;
+}
+.textBOX
+{
+	max-width: 1500px;
+	margin: 100px auto;
+	display: flex;
+}
+.text
+{
+	text-align: justify-all;
+	font-size: 20px;
+	padding: 10px;
+}
+.text h1
+{
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.3s forwards;
+	font-weight: bold;
+}
+.text p 
+{
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.6s forwards;
+	margin-top: 10px;
+}
+.welcome
+{
+	width: 100%;
+	text-align: center;
+}
+.welcome h2
+{
+	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+	margin-top: 20px;
+	color: coral;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out forwards;
+}
+.welcome h1
+{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 50px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.6s forwards;
+	position: relative;
+}
+.welcome h1::after
+{
+	left: 35%;
+	content: "";
+	width: 580px;
+	height: 4px;
+	bottom: -5px;
+	position: absolute;
+	background: red;
+}
+.welcome img
+{
+	width: 100px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.3s forwards;
+}
+@keyframes effectMain
+{
+	from
+	{
+		opacity: 0;
+		transform: translate(0,100px);
+		filter: blur(30px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translate(0,0);
+		filter: blur(0);
+	}
+}
+.bestRes i
+{
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: coral;
+	width: 100%;
+	text-align: center;
+}
+.bestRes
+{
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	font-size: 20px;
+	flex: 1;
+}
+.chef
+{
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+	margin-right: 30px;
+	padding: 20px;
+	border-radius: 30px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out forwards;
+}
+.chef::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.food
+{
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+	margin-right: 30px;
+	padding: 20px;
+	border-radius: 30px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.3s forwards;
+}
+.food::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.online
+{
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+	margin-right: 30px;
+	padding: 20px;
+	border-radius: 30px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.6s forwards;
+}
+.online::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.service
+{
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+	margin-right: 30px;
+	padding: 20px;
+	border-radius: 30px;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.9s forwards;
+}
+.service::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.bestRes .name
+{
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.danhGia
+{
+	max-width: 100%;
+	background-color: #161111;
+	color: white;
+}
+.danhGia i
+{
+	margin-top: 20px;
+	margin-right: 20px;	
+	font-size: 50px;
+}
+.itemDG
+{
+	width: 1000px;
+	display: flex;
+	margin: 0 auto;
+}
+.khachHang
+{
+	flex: 1;
+	display: flex;
+	margin-right: 20px;
+}
+.soNam
+{
+	flex: 1;
+	display: flex;
+	margin-right: 20px;
+}
+.theFoods
+{
+	flex: 1;
+	display: flex;
+	margin-right: 20px;
+}
+.title
+{
+	font-weight: bold;
+	font-size: 20px;
+}

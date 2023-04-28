@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>Nhà Hàng GTX</title>
+</head>
+<body>
+	<div class="header">
+	<div class="logo">
+		<div class="hinh">
+		<img src="img/cutlery.png" alt="logo">
+		</div>
+		<div class="Ten">
+		<p><h1>GTX RESTAURANT</h1>Eatery and Wine</p>
+		</div>
+		</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html" style="color: red"><img src="img/home.png" alt="home">Trang Chủ</a></li>	
+			<li class="foodMenu"><a href="food.html"><img src="img/restaurant.png" alt="food">Món ăn</a>
+			<ul class="food2Menu">
+				<li class="food2Menu1"><i class="fa-solid fa-carrot"></i><a href="#">Khai vị</a>
+					<ul class="food3Menu">
+						<li><i class="fa-solid fa-mug-hot"></i><a href="#">Súp</a></li>
+						<li><i class="fa-solid fa-bread-slice"></i><a href="#">Bánh Mì</a></li>
+						<li><i class="fa-solid fa-plate-wheat"></i><a href="#">Rau</a></li>
+					</ul>
+				</li>
+				<li class="food2Menu2"><i class="fa-solid fa-bowl-food"></i><a href="#">Món chính</a>
+				<ul class="food3Menu1">
+						<li><i class="fa-solid fa-fish"></i><a href="#">Món sống</a></li>
+						<li><i class="fa-solid fa-drumstick-bite"></i><a href="#">Món chín</a></li>
+					</ul>
+				</li>
+				<li><i class="fa-solid fa-cookie-bite"></i><a href="#">Tráng miệng</a></li>
+				<li><i class="fa-solid fa-wine-glass"></i><a href="#">Nước uống</a></li>
+			</ul>
+			</li>
+			<li><a href="table.html"><img src="./img/edit-table.png" alt="table">Đặt bàn</a></li>
+			<li><a href="location.html"><img src="img/location.png" alt="location">Vị Trí</a></li>
+			<li><a href="chef.html"><img src="img/chef.png" alt="chef">Đầu bếp</a></li>	
+			<li><a href="more.html"><img src="img/information.png" alt="more">Thông tin</a></li>
+		</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="slide">
+		<div class="item">
+		<div class="hinhAnh">
+		<img src="img/Thiết kế chưa có tên (6).png" alt="Banner Image">	
+		</div>	
+		</div>
+			<div class="item">
+		<div class="hinhAnh">
+  		<img src="img/Thiết kế chưa có tên (7).png" alt="Banner Image">
+		</div>	
+		</div>
+			<div class="item">
+		<div class="hinhAnh">
+ 		 <img src="img/Thiết kế chưa có tên (8).png" alt="Banner Image">
+		</div>
+		</div>
+			<div class="item">
+		<div class="hinhAnh">
+		  <img src="img/Thiết kế chưa có tên (9).png" alt="Banner Image">
+		</div>
+		</div>
+		</div>
+		<div class="btn">
+			<button id ="prev"><i class="fa-solid fa-angles-left"></i></button>
+			<button id ="next"><i class="fa-solid fa-angles-right"></i></button>
+			</div>
+			<ul class = "dots">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+</div>
+	<script>
+		let slider = document.querySelector(".slide");
+		let item = document.querySelectorAll(".item");
+		let dots = document.querySelectorAll(".dots li");
+		let prev = document.getElementById("prev");
+		let next = document.getElementById("next");
+		let maxSlide = item.length - 1;
+		let active = 0;
+		next.onclick = function()
+		{
+			if(active + 1 > maxSlide)
+				{
+					active = 0;
+				}
+			else
+				{
+					active = active + 1;
+				}
+			reloadLayer();
+		}
+		prev.onclick = function()
+		{
+			if(active -1 < 0)
+				{
+					active = item.length - 1;
+				}
+			else
+				{
+					active = active - 1;
+				}
+			reloadLayer();
+		}
+		let reload = setInterval(() =>{
+			next.click()
+		},3000);
+		function reloadLayer()
+		{
+			slider.style.left = -item[active].offsetLeft + "px";
+			let dotsLastest = document.querySelector(".dots li.active");
+			dotsLastest.classList.remove("active");
+			dots[active].classList.add("active");
+			clearInterval(reload);
+			reload = setInterval(() =>{
+			next.click()
+		},3000);
+		}
+		for(let i = 0; i<dots.length;i++)
+			{
+				dots[i].addEventListener("click",()=>
+										{
+					active = i;
+					reloadLayer();
+				})
+			}
+	</script>
+	<!--<script>
+		const bannerImg = document.querySelectorAll(".banner img");
+		let index = 0;
+		setInterval(function(){
+					bannerImg[index].classList.remove("active");
+			index = (index + 1)%bannerImg.length;
+			bannerImg[index].classList.add("active");
+					}, 5000);
+	</script>-->
+	<div class="welcome">
+	<h2>GTX RESTAURANT</h2>
+		<img src="img/cutlery.png" alt="">
+	<h1>WELCOME YOU TO HERE</h1>
+	</div>
+	<div class="bestRes">
+	<div class="chef">
+		<div class="icon">
+		<i class="fa-solid fa-user-check"></i>
+		</div>
+		<div class="name">
+		Đầu Bếp <br>hàng đầu
+		</div>
+		<div class="des">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat pariatur unde nulla veniam error.
+		</div>
+		</div>
+		<div class="food">
+		<div class="icon">
+		<i class="fa-solid fa-bowl-food"></i>		
+			</div>
+		<div class="name">
+		Chất lượng<br> đồ ăn
+		</div>
+		<div class="des">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat pariatur unde nulla veniam error.
+		</div>
+		</div>
+		<div class="online">
+		<div class="icon">
+		<i class="fa-solid fa-earth-americas"></i>
+		</div>
+		<div class="name">
+		Đặt bàn online
+		</div>
+		<div class="des">
+			<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat pariatur unde nulla veniam error.
+		</div>
+		</div>
+		<div class="service">
+		<div class="icon">
+        <i class="fa-solid fa-bell-concierge"></i>
+			</div>
+		<div class="name">
+		Dịch vụ 24h
+		</div>
+			<br>
+		<div class="des">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat pariatur unde nulla veniam error.
+		</div>
+		</div>
+	</div>
+	<div class="textBOX">
+	<div class="box1">
+		<div class="img">
+		<img src="img/bbq-grill-cooked-with-hot-spicy-sichuan-pepper-sauce-is-chinese-herb.jpg" alt="">
+		</div>
+		<div class="text">
+		<h1>MÓN ĂN</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius temporibus autem magnam sed ducimus, dolorem quisquam vero voluptatibus ipsum ea sequi. Corporis optio ducimus soluta in mollitia quaerat facere odio?
+			</p>
+		</div>
+		</div>
+		<div class="box2">
+		<div class="img">
+			<img src="img/Barbieri_-_ViaSophia25668.jpg" alt="">
+			</div>
+			<div class="text">
+			<h1>TRANG TRÍ</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nostrum amet repudiandae perferendis fugiat quis mollitia excepturi ullam optio ratione iusto, ab similique, consequatur recusandae expedita praesentium labore atque perspiciatis.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="danhGia">
+	<div class="itemDG">
+		<div class="khachHang">
+		<div class="icon">
+			<i class="fa-solid fa-users"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Được đánh giá cao
+			</div>
+			<div class="noiDung">
+			Đã được hơn 45 nghìn khách hàng đánh giá tốt.
+			</div>
+		</div>
+		</div>
+		<div class="soNam">
+		<div class="icon">
+			<i class="fa-solid fa-calendar-days"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Nhiều kinh nghiệm
+			</div>
+			<div class="noiDung">
+			Đội ngũ có hơn 10 năm kinh nghiệm.
+			</div>
+		</div>
+		</div>
+		<div class="theFoods">
+		<div class="icon">
+			<i class="fa-solid fa-bowl-rice"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Đa dạng đồ ăn
+			</div>
+			<div class="noiDung">
+			Với rất nhiều món ăn cùng nhiều loại nước.
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="introductionBox">
+	<div class="hinhAnhBox">
+		
+	</div>
+	<div class="noiDungBox">
+		
+	</div>
+	</div>
+</body>
+</html>
