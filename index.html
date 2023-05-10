@@ -202,7 +202,7 @@
 		<img src="img/bbq-grill-cooked-with-hot-spicy-sichuan-pepper-sauce-is-chinese-herb.jpg" alt="">
 		</div>
 		<div class="text">
-		<h1>MÓN ĂN</h1>
+		<h1>Món Ăn</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius temporibus autem magnam sed ducimus, dolorem quisquam vero voluptatibus ipsum ea sequi. Corporis optio ducimus soluta in mollitia quaerat facere odio?
 			</p>
 		</div>
@@ -212,12 +212,186 @@
 			<img src="img/Barbieri_-_ViaSophia25668.jpg" alt="">
 			</div>
 			<div class="text">
-			<h1>TRANG TRÍ</h1>
+			<h1>Trang Trí</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nostrum amet repudiandae perferendis fugiat quis mollitia excepturi ullam optio ratione iusto, ab similique, consequatur recusandae expedita praesentium labore atque perspiciatis.
 				</p>
 			</div>
 		</div>
 	</div>
+	<div class="introductionBox">
+	<div class="hinhAnhBox">
+		<div class="itemLarge">
+		<img src="img/NSH_033.277.jpg" alt="res">
+		</div>
+		<div class="itemSmall1">
+		<img src="img/190710135245-12-waterfront-restaurants.jpg" alt="res">
+		</div>
+		<div class="itemSmall2">
+		<img src="img/Lark_Zack-Bent_2018_Lark_Interior2.webp" alt="res">
+		</div>
+		<div class="itemLarge">
+		<img src="img/photo-1517248135467-4c7edcad34c4.jpg" alt="res">
+		</div>
+	</div>
+	<div class="noiDungBox">
+		<div class="BoxTitle">
+		Cơ sở nhà hàng 5 sao
+		</div>
+		<div class="BoxDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias at qui error dicta illum, pariatur voluptate quisquam! Architecto sed fugiat inventore explicabo quasi voluptatum eligendi iste, impedit dolores. Vel!
+		</div>
+		<button id = "readMore">Read More</button>
+		<input type="checkbox" id = "MoreText">
+		<div class="BoxDesChild">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eum ipsa perferendis, error fugit sunt soluta nobis! Consectetur eum ea enim id aperiam sunt, vel, dignissimos quae, explicabo accusantium perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, reprehenderit facilis magni iste labore doloremque tenetur quae, tempora enim accusantium provident. Doloribus repellendus quae facilis modi consequuntur corporis esse aliquam!
+		</div>
+	</div>
+	</div>
+	<script>
+  var button = document.getElementById("readMore");
+  var checkbox = document.getElementById("MoreText");
+
+  button.addEventListener("click", function() {
+	  if(checkbox.checked == true)
+		  {
+			  checkbox.checked = false;
+		  }
+	  else
+		  {
+			  checkbox.checked = true;
+		  }
+  });
+	/*button.onclick = ()=>
+	{
+		if(checkbox.checked == true)
+			{
+				checkbox.checked = false;
+			}
+		else
+			{
+				checkbox.checked = true;
+			}
+	}*/
+	</script>
+	<div class="danhGia">
+	<div class="itemDG">
+		<div class="khachHang">
+		<div class="icon">
+			<i class="fa-solid fa-street-view"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Hơn 100 chi nhánh
+			</div>
+			<div class="noiDung">
+			Nhà hàng đã có mặt trên khắp quốc gia.
+			</div>
+		</div>
+		</div>
+		<div class="soNam">
+		<div class="icon">
+			<i class="fa-solid fa-file-circle-check"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Được đánh giá cao
+			</div>
+			<div class="noiDung">
+			Cơ sở vật chất đạt chuẩn 5 sao.
+			</div>
+		</div>
+		</div>
+		<div class="theFoods">
+		<div class="icon">
+			<i class="fa-solid fa-truck"></i>
+		</div>
+		<div class="text">
+			<div class="title">
+			Nguyên liệu sạch
+			</div>
+			<div class="noiDung">
+			Các nguyên liệu chế biến được nhập khẩu.
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="foodSlider">
+	<div class="foodTitle">
+		Danh sách những món ăn<br>
+		Tiêu Biểu
+	</div>
+	<div id ="ItemSlider">
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/cream-tomato-rigatoni-FT-RECIPE1020-139fb3fa52574e8bb06f98e7fa3e4f1e.jpg)">
+		<div class="itemFoodText">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+		</div>
+	</div>
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/cach-bao-quan-pizza-de-banh-pizza-va-cach-ham-nong-banh-pizza-avt-1200x676.jpg)">
+		<div class="itemFoodText">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+		</div>
+	</div>
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/indian-crab-curry-1957735-hero-01-74d33f0b5657459b853a6e8bed66e90f.jpg)">
+		<div class="itemFoodText">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+		</div>
+	</div>
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/what-is-sushi-5079606-hero-01-e5a0a26f194a49478f84e04193baaefa.jpg)">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+	</div>
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/tu-nau-pho-bo-thom-ngon-dam-da-de-dang-nhat_6ea96ea7e3ad4a82ab2ca9809059b77d.jpg)">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+	</div>
+	<div class="itemSliderFood" style="background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(./img/63-1200x676-1.jpg)">
+		<div class="itemTitle">
+		Lorem Font
+		</div>
+		<div class="itemDes">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quis, sunt recusandae, unde sapiente maxime saepe vitae.
+		</div>
+	</div>
+	</div>
+		<div class="btnFood">
+		<button id ="prevFood"><i class="fa-solid fa-caret-left"></i></button>
+		<button id = "nextFood"><i class="fa-solid fa-caret-right"></i></button>
+		</div>
+	</div>
+	<script>
+	document.getElementById("nextFood").onclick = ()=>{
+		let lists = document.querySelectorAll(".itemSliderFood");
+		document.getElementById("ItemSlider").appendChild(lists[0]);
+		}
+	document.getElementById("prevFood").onclick = ()=>{
+		let lists = document.querySelectorAll(".itemSliderFood");
+		document.getElementById("ItemSlider").prepend(lists[lists.length-1]);
+	}
+	</script>
 	<div class="danhGia">
 	<div class="itemDG">
 		<div class="khachHang">
@@ -261,12 +435,86 @@
 		</div>
 		</div>
 	</div>
-	<div class="introductionBox">
-	<div class="hinhAnhBox">
-		
+	<div class="countDown">
+	<div class="itemCount">
+	<div class="imgTime">
+	<img src="img/TOO_restaurant_Panoramique_vue_Paris_Seine_Tour_Eiffel_2.jpg" alt="img">	
 	</div>
-	<div class="noiDungBox">
-		
+	<div class="time">
+		<div class="titleTime">
+		Thời gian khuyến mãi<br>Giảm 50% khi đặt bàn trực tuyến!
+		</div>
+		<div class="dayHour">
+		DAYS:
+		<div id="days">
+		05
+		</div>
+		HOURS:
+		<div id="hour">
+		12
+		</div>
+		MINUTES:
+		<div id="minute">
+		50
+		</div>
+		SECONDS:
+		<div id="second">
+		44
+		</div>
+		</div>
+		<div class="clickRec">
+		<div class="mess">
+		<i class="fa-solid fa-arrow-right-long"></i>Click để đặt bàn ngay!	
+		</div>
+		<button id = "dangKy">Đặt Bàn</button>
+		</div>
+		</div>
+	</div>
+	</div>
+	<script>
+let endDate = new Date("05/15/2023 00:00:00").getTime();
+let check = setInterval(function(){
+    let now = new Date().getTime();
+    let distance = endDate - now;
+    let day = Math.floor(distance / (24*60*60*1000));
+    let hour = Math.floor((distance % (24*60*60*1000)) / (60* 60*1000));
+    let minute = Math.floor((distance % (60* 60*1000)) / (60*1000));
+    let seconds = Math.floor((distance % (60*1000)) / 1000);
+	document.getElementById("days").innerText = day;
+	document.getElementById("hour").innerText = hour;
+	document.getElementById("minute").innerText = minute;
+	document.getElementById("second").innerText = seconds;
+    if(distance <= 0){
+        clearInterval(check);
+    }
+}, 1000);
+	</script>
+	<div class="footer">
+	<div class="leftFooter">
+		<ul>
+			<li><i class="fa-brands fa-facebook"></i>Facebook: GtxRes</li>
+			<li><i class="fa-brands fa-twitter"></i>Twitter: GtxT</li>
+			<li><i class="fa-brands fa-youtube"></i>Youtube: GtxChanel</li>
+			<li><i class="fa-solid fa-envelope"></i>Email: GtxResTian@gmail.com</li>
+			<li><i class="fa-solid fa-phone"></i>Phone: 0942316579</li>
+		</ul>
+	</div>
+	<div class="centerFooter">
+		<div class="tilteFooter">Sự hài lòng của bạn là niềm tự hào của chúng tôi</div>
+		<ul>
+			<li>Trần Hoàng Anh Khôi</li>
+			<li>Điền tên vào đây</li>
+			<li>Điền tên vào đây</li>
+		</ul>
+	</div>
+	<div class="rightFooter">
+		<ul>
+			<li>123 Main Street, Anytown, USA</li>
+			<li>456 Park Avenue, Cityville, USA</li>
+			<li>789 Elm Street, Villagetown, USA</li>
+			<li>321 Oak Avenue, Townsville, USA</li>
+			<li>987 Pine Road, Boroughville, USA</li>
+		</ul>
 	</div>
 	</div>
 </body>

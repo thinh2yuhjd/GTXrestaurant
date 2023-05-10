@@ -1,5 +1,6 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Lobster&family=Montserrat+Alternates:wght@900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
 *
 {
 	padding: 0;
@@ -106,7 +107,6 @@ a
 	z-index: 999;
 	background: white;
 	border-radius: 0 0 30px 30px;
-	padding: 30px;
 	opacity: 0;
 	transition: all .5s;
 }
@@ -120,6 +120,11 @@ a
 	font-size: 20px;
 	margin-left: 10px;
 	margin-right: 20px;
+}
+.food2Menu li
+{
+	width: 100%;
+	height: 50px;
 }
 .food3Menu
 {	
@@ -278,7 +283,7 @@ a
 	shape-outside: margin-box;
 	margin: 5px 10px 5px 10px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out forwards;
+	animation: effectMain 1s ease-in-out 1 forwards;
 }
 .textBOX
 {
@@ -294,29 +299,29 @@ a
 }
 .text h1
 {
-	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.3s forwards;
 	font-weight: bold;
+	font-family: 'Lobster', cursive;
 }
 .text p 
 {
-	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.6s forwards;
 	margin-top: 10px;
+	font-size: 18px;
 }
 .welcome
 {
-	width: 100%;
+	width: 800px;
 	text-align: center;
+	margin: 10px auto;
 }
 .welcome h2
 {
 	font-size: 30px;
+	font-weight: bold;
 	font-family: 'Pacifico', cursive;
 	margin-top: 20px;
 	color: coral;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out forwards;
+	animation: effectMain 1s ease-in-out 1 forwards;
 }
 .welcome h1
 {
@@ -324,14 +329,15 @@ a
 	font-weight: bold;
 	font-size: 50px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.6s forwards;
+	animation: effectMain 1s ease-in-out 0.6s 1 forwards;
 	position: relative;
+	font-family: 'Righteous', cursive;
 }
 .welcome h1::after
 {
-	left: 35%;
+	left: 0;
 	content: "";
-	width: 580px;
+	width: 100%;
 	height: 4px;
 	bottom: -5px;
 	position: absolute;
@@ -341,7 +347,7 @@ a
 {
 	width: 100px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.3s forwards;
+	animation: effectMain 1s ease-in-out 0.3s 1 forwards;
 }
 @keyframes effectMain
 {
@@ -381,7 +387,7 @@ a
 	padding: 20px;
 	border-radius: 30px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out forwards;
+	animation: effectMain 1s ease-in-out 1 forwards;
 }
 .chef::after
 {
@@ -396,7 +402,7 @@ a
 	padding: 20px;
 	border-radius: 30px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.3s forwards;
+	animation: effectMain 1s ease-in-out 0.3s 1 forwards;
 }
 .food::after
 {
@@ -411,7 +417,7 @@ a
 	padding: 20px;
 	border-radius: 30px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.6s forwards;
+	animation: effectMain 1s ease-in-out 0.6s 1 forwards;
 }
 .online::after
 {
@@ -426,7 +432,7 @@ a
 	padding: 20px;
 	border-radius: 30px;
 	opacity: 0;
-	animation: effectMain 1s ease-in-out 0.9s forwards;
+	animation: effectMain 1s ease-in-out 0.9s 1 forwards;
 }
 .service::after
 {
@@ -453,6 +459,10 @@ a
 	margin-right: 20px;	
 	font-size: 50px;
 }
+.danhGia .noiDung
+{
+	font-size: 15px;
+}
 .itemDG
 {
 	width: 1000px;
@@ -477,8 +487,367 @@ a
 	display: flex;
 	margin-right: 20px;
 }
-.title
+.danhGia .title
 {
 	font-weight: bold;
 	font-size: 20px;
+}
+.introductionBox
+{
+	margin: 100px 200px;
+	max-width: 1600px;
+	height: 650px;
+	display: flex;
+}
+.introductionBox img
+{
+	width: 400px;
+	height: 300px;
+}
+.introductionBox > .hinhAnhBox
+{
+	max-width: 900px;
+	height: 650px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.introductionBox > .hinhAnhBox img
+{
+	margin-right: 30px;
+	border-radius: 10px;
+}
+.introductionBox > .hinhAnhBox > .itemSmall1
+{
+	width: 400px;
+	height: 300px;
+	margin-right: 30px;
+	position: relative;
+}
+.introductionBox > .hinhAnhBox > .itemSmall1 img
+{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.introductionBox > .hinhAnhBox > .itemSmall2
+{
+	width: 400px;
+	height: 300px;
+	margin-right: 30px;
+	position: relative;
+}
+.introductionBox > .hinhAnhBox > .itemSmall2 img
+{
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	left: 150px;
+	top: 0;
+}
+.noiDungBox
+{
+	margin-top: 100px;
+	max-width: 550px;
+	height: 650px;
+	position: relative;
+}
+.noiDungBox #readMore
+{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	top: 200px;
+	left: 400px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: coral;
+	border-radius: 30px;
+	font-weight: bold;
+	color: white;
+	transition: all 1s;
+	transform-origin: center;
+}
+.noiDungBox .BoxTitle
+{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Lobster', cursive;
+}
+.noiDungBox .BoxDes
+{
+	margin-top: 20px;
+	line-height: 1.5;
+}
+.noiDungBox .BoxDesChild
+{
+	opacity: 0;
+	transition: all .5s;
+	margin-top: 100px;
+	line-height: 1.5;
+}
+#MoreText
+{
+	opacity: 0;
+}
+#MoreText[type="checkbox"]:checked + .BoxDesChild
+{
+	opacity: 1;
+}
+.foodSlider
+{
+	max-width: 1200px;
+	margin: 100px auto;
+	margin-bottom: 500px;
+	height: 500px;
+	position: relative;
+}
+.foodSlider .foodTitle
+{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	font-family: 'Lobster', cursive;
+}
+.foodSlider #ItemSlider
+{
+	width: 1200px;
+	height: 700px;
+	border-radius: 30px;
+	position: relative;
+}
+.foodSlider #ItemSlider .itemSliderFood
+{
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: absolute;
+	left: 5%;
+	bottom: 150px;
+	border-radius: 30px;
+	color: white;
+	transition: all 1s;
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(1),
+.foodSlider #ItemSlider .itemSliderFood:nth-child(2)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(3)
+{
+	left: 50%;
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(4)
+{
+	left: calc(50% + 220px);
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(5)
+{
+	left: calc(50% + 440px);
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(6)
+{
+	left: calc(50% + 660px);
+	display: none;
+}
+.foodSlider #ItemSlider .itemSliderFood .itemTitle
+{
+	font-size: 30px;
+	font-weight: bold;
+	display: none;
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(2) .itemTitle
+{
+	display: block;
+	position: absolute;
+	left: 5%;
+	top: 45%;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 1 forwards;
+}
+.foodSlider #ItemSlider .itemSliderFood .itemDes
+{
+	width: 500px;
+	margin-top: 10px;
+	line-height: 1.5;
+	display: none;
+}
+.foodSlider #ItemSlider .itemSliderFood:nth-child(2) .itemDes
+{
+	display: block;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	font-weight: 600;
+	opacity: 0;
+	animation: effectMain 1s ease-in-out 0.3s 1 forwards;
+}
+.foodSlider .btnFood
+{
+	position: absolute;
+	bottom: -180px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.foodSlider .btnFood button
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	outline: none;
+	border: 2px solid white;
+	transition: all .5s;
+	cursor: pointer;
+	background: white;
+}
+.foodSlider .btnFood button:hover
+{
+	background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+}
+.foodSlider .btnFood button:hover i
+{
+	color: white;
+}
+.foodSlider .btnFood i
+{
+	font-size: 15px;
+	transition: all .5s;
+}
+.countDown
+{
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+.countDown img
+{
+	widows: 512px;
+	height: 512px;
+	border: 4px solid white;
+	border-radius: 30px;
+}
+.countDown .itemCount
+{
+	display: flex;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+}
+.countDown .itemCount .time
+{
+	position: relative;
+	width: 800px;
+	margin-top: 50px;
+	margin-left: 100px;
+	display: inline-block;
+	justify-content: center;
+}
+.countDown .itemCount .time .clickRec
+{
+	position: absolute;
+	font-weight: bold;
+	font-size: 30px;
+	bottom: 30%;
+	left: 50%;
+}
+.countDown .itemCount .time .clickRec #dangKy
+{
+	width: 100px;
+	height: 35px;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: coral;
+	border-radius: 30px;
+	margin-left: 250px;
+}
+.countDown .itemCount .time .clickRec .mess i
+{
+	margin-right: 10px;
+}
+.countDown .itemCount .time .clickRec .mess
+{
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+}
+.countDown .itemCount .time .dayHour
+{
+	display: flex;
+	font-weight: bold;
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	width: 700px;
+	margin: 20px auto;
+}
+#days,
+#hour,
+#minute,
+#second
+{
+	text-align: center;
+	font-size: 35px;
+	margin-left: 10px;
+	margin-right: 50px;
+	max-width: 25px;
+}
+.countDown .itemCount .time .titleTime
+{
+	color: coral;
+	font-family: 'Lobster', cursive;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	max-height: 200px;
+}
+.footer
+{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin-top: 20px;
+	width: 100%;
+	height: 200px;
+	background: black;
+}
+.footer .leftFooter i
+{
+	margin-right: 10px;
+}
+.leftFooter,
+.centerFooter,
+.rightFooter
+{
+	margin-top: 20px;
+}
+.leftFooter ul li
+{
+	 margin-top: 10px;
+}
+.rightFooter ul li
+{
+	 margin-top: 10px;
+}
+.centerFooter ul li
+{
+	margin-top: 10px;
+	list-style: none;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+}
+.centerFooter .tilteFooter
+{
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
 }
