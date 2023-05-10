@@ -696,6 +696,7 @@ a
 	position: absolute;
 	bottom: -180px;
 	left: 50%;
+	bottom: 20%;
 	transform: translate(-50%,-50%);
 }
 .foodSlider .btnFood button
