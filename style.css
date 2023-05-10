@@ -494,7 +494,7 @@ a
 }
 .introductionBox
 {
-	margin: 100px 200px;
+	margin: 100px auto;
 	max-width: 1600px;
 	height: 650px;
 	display: flex;
@@ -724,9 +724,9 @@ a
 }
 .countDown
 {
-	width: 100%;
-	height: 800px;
-	position: relative;
+	width: 1800px;
+	height: 600px;
+	margin: 100px auto;
 }
 .countDown img
 {
@@ -738,9 +738,8 @@ a
 .countDown .itemCount
 {
 	display: flex;
-	position: absolute;
-	top: 20%;
-	left: 10%;
+	width: 1800px;
+	height: 600px;
 }
 .countDown .itemCount .time
 {
